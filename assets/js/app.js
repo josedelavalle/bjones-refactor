@@ -11,8 +11,8 @@ app.controller('bjonesController', function($scope, $mdDialog, getWheelItems, ge
 	$scope.serviceCategoryList = [{name: "Swedish", description: "Swedish Massage is relaxing yet still therapeutic. It combines an array of strokes such as rolling, kneading, and percussion to improve circulation. The benefits of this type of bodywork are wide-ranging and include relief from aches and pains, decreased stress, enhanced mental clarity, and greater flexibility."},
 									  {name: "Deep Tissue", description: "Deep Tissue helps relieve severe tension in muscle and connective tissue or fascia. This type of massage focuses on the muscles located below the surface of the top muscles. Deep tissue massage is often recommended for individuals who experience consistent pain, are involved in heavy physical activity (such as athletes), and patients who have sustained physical injury. It is not uncommon for receivers of deep tissue massage to have their pain replaced with a new muscle ache for a day or two"}];
 	$scope.seeMap = false;
-	apiKey = "AIzaSyBy34i8mK7IXxcAqmZfOEX70XZtNEt7D7s"
-	$scope.mapSrc="https://maps.googleapis.com/maps/api/staticmap?center=" + $scope.streetAddress.replace(" ","+") + "&zoom=13&size=600x300&maptype=roadmap&markers=color:blue%7Clabel:S%7C40.702147,-74.015794&markers=color:green%7Clabel:G%7C40.711614,-74.012318&markers=color:red%7Clabel:C%7C40.718217,-73.998284&key=" + apiKey;
+	apiKey = "AIzaSyBy34i8mK7IXxcAqmZfOEX70XZtNEt7D7s";
+	$scope.mapSrc="https://maps.googleapis.com/maps/api/staticmap?center=" + $scope.streetAddress.replace(" ","+") + "&zoom=16&size=600x300&maptype=roadmap&markers=color:blue%7Clabel:S%7C40.702147,-74.015794&markers=color:green%7Clabel:G%7C40.711614,-74.012318&markers=color:red%7Clabel:C%7C40.718217,-73.998284&key=" + apiKey;
 	$scope.selectedIndex = 0;
 	$scope.currentNavItem = 'page1';
 	getWheelItems.get().then(function (msg) {

@@ -9,16 +9,11 @@
                       <a href="#" class="image"><img ng-src="{{subitem.image}}" alt="" /></a>
                       <h3>{{subitem.subitem}}</h3>
                       <p>{{subitem.description}}</p>
-                      <!-- <ul class="actions">
-                        <li><a href="#" class="button">Book Appointment</a></li>
+                      <ul class="actions">
+                        <li><a href="#" ng-click="ctrl.openDialog($event)" class="button">Book Appointment</a></li>
 
-                      </ul> -->
-                      <md-content class="md-padding">
-                         
-
-                          <md-button ng-click="ctrl.openDialog($event)" class="md-raised">Book Apointment</md-button>
-                           
-                      </md-content>
+                      </ul>
+                      
                     </article>
                     
                   </div>

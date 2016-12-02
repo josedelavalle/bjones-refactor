@@ -27,8 +27,7 @@
 						<div class="inner">
 
 							<!-- Header -->
-							 <md-datepicker ng-model="myDate" md-placeholder="Enter date"
-            md-min-date="minDate" md-max-date="maxDate"></md-datepicker>
+							 <md-datepicker ng-model="myDate" md-placeholder="Enter date"md-min-date="minDate" md-max-date="maxDate"></md-datepicker>
 							<header id="header">
 								<a href="index.html" class="logo"><img src="images/bjones.png"><h3>organic spa</h3></a>
 								<div ng-include="'partials/socialmedia.html'"></div>
@@ -38,7 +37,7 @@
 									<div class="content">
 										<header>
 											<h2>Relaxation &bull; Sustainability &bull; Wellness</h2>
-											<a ng-click="seeMap=!seeMap">
+											<a href="#" ng-click="seeMap=!seeMap">
 												<p>{{streetAddress}}<i ng-class="seeMap ? 'fa fa-minus' : 'fa fa-plus'"></i></p></a>
 											<span ng-if="seeMap" class="image fit map">
 												<a href="https://www.google.com/maps/place/62+South+St,+Morristown,+NJ+07960" target="_blank">

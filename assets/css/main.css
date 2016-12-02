@@ -2165,6 +2165,12 @@ button,
   button:active,
   .button:active {
     background-color: rgba(130, 202, 146, 0.15); }
+  input[type="submit"]:focus,
+  input[type="reset"]:focus,
+  input[type="button"]:focus,
+  button:focus,
+  .button:focus {
+    outline: 0; }
   input[type="submit"].icon:before,
   input[type="reset"].icon:before,
   input[type="button"].icon:before,
@@ -2495,6 +2501,9 @@ md-datepicker {
 .md-datepicker-input-container {
   visibility: hidden;
   max-width: 0px; }
+
+.md-dialog {
+  width: 100%; }
 
 /* Wrapper */
 #wrapper {
