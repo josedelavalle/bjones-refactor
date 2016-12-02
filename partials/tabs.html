@@ -1,0 +1,28 @@
+<md-content>
+    <md-tabs md-dynamic-height md-border-bottom md-green>
+      <md-tab label="{{item.wheel}}" ng-repeat="item in menuItems">
+        <md-content class="md-padding">
+          <!-- <h1 class="md-display-2">{{item.wheel}}</h1> -->
+          <h3>{{item.description}}</h3>
+          <div class="posts">
+                    <article ng-repeat="subitem in menuItems[$index].menu">
+                      <a href="#" class="image"><img ng-src="{{subitem.image}}" alt="" /></a>
+                      <h3>{{subitem.subitem}}</h3>
+                      <p>{{subitem.description}}</p>
+                      <!-- <ul class="actions">
+                        <li><a href="#" class="button">Book Appointment</a></li>
+
+                      </ul> -->
+                      <md-content class="md-padding">
+                         
+
+                          <md-button ng-click="ctrl.openDialog($event)" class="md-raised">Book Apointment</md-button>
+                           
+                      </md-content>
+                    </article>
+                    
+                  </div>
+        </md-content>
+      </md-tab>
+    </md-tabs>
+  </md-content>

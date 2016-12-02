@@ -1,0 +1,250 @@
+[
+	{
+		"wheel": "Facials",
+		"description": "Mixology of Eminence Organic products allows our estheticians to treat different areas of concern or skin conditions with a facial that is specialized to your skin.",
+		"menu" : [
+			{
+				"subitem": "Express Facial", 
+				"image": "images/thumbs/01.jpg", 
+				"description": "Perfect for the person on the go, this mini facial consists of cleansing, exfoliation, masque, and moisturizer. The Express Facial is wonderful as a monthly facial in between treatments to maintain healthy skin. Recommended for all skin types. $65"},
+			{
+				"subitem": "Yam & Pumpkin Peel", 
+				"image": "images/thumbs/02.jpg", 
+				"description": "Our fall favorite peel accelerates the exfoliation process with an enzyme peel that removes dead skin cells, reduces the appearance of pigmentation, fine lines, and sun damage. The natural enzyme content of yam and pumpkin leave skin appearing firm and radiant. The best results are seen with a series of 4-5 services. $85"},
+			{
+				"subitem": "Artic Berry Peel", 
+				"image": "images/thumbs/03.jpg", 
+				"description": "The Arctic Berry Peel is a stand-alone treatment designed to breakdown and remove dead skin cells. This service regenerates skin, helps restore elasticity, and assists with hyperpigmentation. For maximum benefit, we recommend doing a series of 6 services. Recommended for all skin types, especially mature or sun damaged skin. $85"},
+			{
+				"subitem": "Signature Peel", 
+				"image": "images/thumbs/04.jpg", 
+				"description": "Based on an analysis of your skin’s unique needs, our esthetician will created a facial tailored to your skin. Our Signature Facial includes cleansing, exfoliating, extractions if needed, masque, and moisturizer. Relax as your esthetician massages your face, decollate, arms, and hands. Recommended for all skin types including sensitive or acneic skin. $125"},
+			{
+				"subitem": "b.Facial", 
+				"image": "images/thumbs/05.jpg", 
+				"description": "Pamper yourself from head to toe with our b. Facial. This luxurious facial incorporates our Signature Facial, Enzymatic Peel, Lip & Eye Treatment, and Sugar Foot Scrub. The b. Facial is the ultimate facial experience. Ideal for all skin types. The end all b. all of facial services. $195"},
+			{
+				"subitem": "Microdermabrasion", 
+				"image": "images/thumbs/06.jpg", 
+				"description": "Microdermabrasion is an exfoliating treatment designed to polish your skin. Our Pear & Poppy Seed Microderm Polisher helps to lift and remove dead skin cells, revealing more radiant skin. Microdermabrasion assists with skin texture and tone, fine lines, acne scarring, and sun damage. To achieve the best results, we recommend doing a series of 6 services. Recommended for most skin types, except extremely acneic skin. $125"},
+			{
+				"subitem": "Micropeel", 
+				"image": "images/thumbs/07.jpg", 
+				"description": "The Micropeel includes our Microdermabrasion and a VitaSkin Peel. First your skin is polished with our Pear and Poppy Seed Polisher, then one of our Vitaskin Peels tailored to your specific skin condition will be applied. This advanced service allows better absorption of the VitaSkin Peel which will deliver faster results! Due to the double exfoliation in this treatment, it can be slightly more aggressive, but requires no downtime after the service. To achieve best results, we recommend doing this service in a series of 6. Recommended for all skin types. $175"},
+			{
+				"subitem": "Gentleman's Exfoliation", 
+				"image": "images/thumbs/08.jpg", 
+				"description": "The Gentleman's Exfoliation is a neccessity for healthy clean skin. This service includes a cleansing, exfoliation, masque and moisturizer. As the masque absorbs into the skin, enjoy a relaxing neck & shoulder massage. The Gentleman’s Exfoliation helps reduce red bumps and ingrown hairs from shaving. $85"},
+			{
+				"subitem": "Teen Facial", 
+				"image": "images/thumbs/09.jpg", 
+				"description": "The Teen Facial is designed to address the issues associated with adolescent skin. The facial starts with a cleansing, exfoliation & extractions as needed, corrective masque, and moisturizer. Each Teen Facial also includes a home care regimine consultation which teaches your teen how to properly care for their skin. $75"}
+			]
+	},	{
+		"wheel": "Massage",
+		"description": "Modern medicine recognizes that rather than an indulgence, massage has physical, emotional, and mental health benefits. Massage rejuvenates and heals both body and mind. Benefits of massage include, but aren’t limited to: restoring muscle tone, increasing circulation, reducing stiffness, increasing flexibility, reducing stress levels, and detoxifying the body.",
+		"menu" : [
+			{
+				"subitem": "Swedish", 
+				"image": "images/thumbs/11.jpg", 
+				"description": "Swedish Massage is relaxing yet still therapeutic. It combines an array of strokes such as rolling, kneading, and percussion to improve circulation. The benefits of this type of bodywork are wide-ranging and include relief from aches and pains, decreased stress, enhanced mental clarity, and greater flexibility.  30 Minute: $65 | 60 Minute $105 | 90 Minute $145 | 120 Minute $185"},
+			{
+				"subitem": "Deep Tissue", 
+				"image": "images/thumbs/10.jpg", 
+				"description": "Deep Tissue helps relieve severe tension in muscle and connective tissue or fascia. This type of massage focuses on the muscles located below the surface of the top muscles. Deep tissue massage is often recommended for individuals who experience consistent pain, are involved in heavy physical activity (such as athletes), and patients who have sustained physical injury. It is not uncommon for receivers of deep tissue massage to have their pain replaced with a new muscle ache for a day or two.  The term deep tissue is often confused with deep pressure. Deep tissue massage is used to treat particular muscular-skeletal disorders and complaints and employs a dedicated set of techniques and strokes to achieve a measure of relief. Deep pressure massage is performed with sustained strong, occasionally intense pressure throughout an entire full-body session, and that is not performed to address a specific complaint.  Therapeutic Massage: 30 Minute $85 | 60 Minute $125 | 90 Minute $165 | 120 Minute $205"},
+			{
+				"subitem": "Medical", 
+				"image": "images/thumbs/09.jpg", 
+				"description": "Medical Massage differs from regular Massage and Bodywork in that the treatment is specifically directed to resolve conditions diagnosed by a medical doctor. We employ a variety of modalities or techniques during the treatment, but focus the treatment only on the specific areas of the body related to the diagnosis. This enhances the body's natural self-healing process and reduces the needed recovery time from injury.  Therapeutic Massage: 30 Minute $85 | 60 Minute $125 | 90 Minute $165 | 120 Minute $205"},
+			{
+				"subitem": "Sports", 
+				"image": "images/thumbs/08.jpg", 
+				"description": "Sports Massage Therapy utilizes specific strokes to help athletes obtain maximum performance and physical conditioning. While sports massage is beneficial when you are training for an event, it’s also helpful for anyone who stretches physical limits through movement. Swimmers, weight lifters, runners, golfers, ball players, skaters, dancers, tennis players, musicians, and boxers, as well as weekend warriors and those who practice strength training or aerobics, have benefited from sports massage. Sports massage focuses on specific muscles used in your sport or fitness activity. For example, areas of greater stress for runners and cyclists are the legs and lower back; for swimmers, the upper body.  Therapeutic Massage: 30 Minute $85 | 60 Minute $125 | 90 Minute $165 | 120 Minute $205"},
+			{
+				"subitem": "Myofascial Release", 
+				"image": "images/thumbs/07.jpg", 
+				"description": "Myofascial Release helps release stress and tension in the fascia. Fascia is connective tissue surrounding the muscles, bones, nerves, and organs. This slow and steady technique helps restore motion and diminish pain. Myofascial Release is ideal for someone with chronic, inflammation or recovering from trauma.  Therapeutic Massage: 30 Minute $85 | 60 Minute $125 | 90 Minute $165 | 120 Minute $205"},
+			{
+				"subitem": "Oncology", 
+				"image": "images/thumbs/06.jpg", 
+				"description": "Oncology Massage safely works with the complications of cancer and cancer treatments. Our massage therapist who is certified in oncology will use modified techniques to help you relax and unwind. Benefits of Oncology Massage include increased relaxation, sleep and immune function. Additional benefits include relief from pain and anxiety.  Therapeutic Massage: 30 Minute $85 | 60 Minute $125 | 90 Minute $165 | 120 Minute $205"},
+			{
+				"subitem": "Hot Stone", 
+				"image": "images/thumbs/05.jpg", 
+				"description": "Hot Stone Massage melts away stress and tension in the body. Your therapist will place heated stones on various areas of the body and focuses on acupressure points. Warmth of the stones, helps soothe and relax muscles while transmitting heat deep into your body.  60 Minute $135 | 90 Minute $165"},
+			{
+				"subitem": "Reflexology", 
+				"image": "images/thumbs/04.jpg", 
+				"description": "Reflexology is a therapeutic method of relieving pain by stimulating predefined pressure points on the hands and feet. It can be effective for promoting good health and reducing symptoms of stress, injury, and illness.  30 Minute $50 | 60 Minute $90"},
+			{
+				"subitem": "Reiki", 
+				"image": "images/thumbs/03.jpg", 
+				"description": "Reiki is an ancient Japanese method of healing which uses energy to balance the body and mind. Reiki can help the body release stress and tension, improve sleep, relieve pain, reduce blood pressure, and increase energy level. This is a wonderful compliment to medical treatment.  30 Minute $50 | 60 Minute $90"},
+			{
+				"subitem": "Lympathic Drainage", 
+				"image": "images/thumbs/02.jpg", 
+				"description": "Recommended for anyone who has a surgery or trauma involving the lymph nodes. Lympathic Drainage can aid in boosting the immune system and detoxification.  30 Minute $75 | 60 Minute $115 | 90 Minute $145 | 120 Minute $175"},
+			{
+				"subitem": "Prenatal", 
+				"image": "images/thumbs/01.jpg", 
+				"description": "Prenatal Massage is designed to relax the mom-to-be, and can help reduce stress, decrease swelling in the extremities, and relieve muscle and joint pain. Our massage therapists will lay you on your side to maximize your comfort. This massage is intended for pregnant women who are out of their first trimester.  60 Minute $100"}
+			]
+	},	{	
+		"wheel": "Treatment",
+		"description": "b.jones offers an array of invigorating body treatments",
+		"menu" : [
+			{
+				"subitem": "Hand & Arm Treatment", 
+				"image": "images/thumbs/03.jpg", 
+				"description": "Revitalize your hand & arms with an exfoliation, massage, and masque. The service is concluded with a moisturizer that is designed to leave your hands soft and hydrated. $35"},
+			{
+				"subitem": "Foot & Leg Treatment", 
+				"image": "images/thumbs/12.jpg", 
+				"description": "Put some pep in your step! Your therapist will pamper your feet and legs with an exfoliation, masque, and massage. Finish up with a moisturizing treatment to soften and smooth your skin. $50"},
+			{
+				"subitem": "Back Treatment", 
+				"image": "images/thumbs/08.jpg", 
+				"description": "The Back Treatment starts with a Eucalyptus Cleanser, exfoliation, and Hungarian Herbal Mud Treatment. If needed extractions are performed, followed by masque, massage and finished with a hydrating moisturizer. A must have to achieve flawless skin in this hard to reach area. $125"},
+			{
+				"subitem": "Full Body Sugar Scrub", 
+				"image": "images/thumbs/06.jpg", 
+				"description": "Treat yourself to a head- to- toe exfoliation. This will remove any excess skin cells from the surface of your body, leaving the skin feeling fresh and vibrant while brightening appearance. To optimize hydration, a moisturizer is applied as a final touch. $100"},
+			{
+				"subitem": "Hydrating Body Treatment", 
+				"image": "images/thumbs/04.jpg", 
+				"description": "Lock in moisture and hydrate your skin with this firming service. Active enzymes and vitamins in the wrap infuse your skin with hydration and gently exfoliate to reveal brighter healthy skin. $150"},
+			{
+				"subitem": "Detoxifying Body Treatment", 
+				"image": "images/thumbs/02.jpg", 
+				"description": "The Detoxifying Body Treatment benefits all skin types by opening pores, eliminating toxins & increasing circulation. The Hungarian Herbal Mud Treatment used during this service includes cinnamon to fight off bacteria, ivy for Vitamin C, sage to tone and heal & paprika to stimulate and refresh your skin. $150"}
+			]
+	},	{
+		"wheel": "Add-ons",
+		"description": "b.jones provides various additional services that can be added onto your service of choice",
+		"menu" : [
+			{
+				"subitem": "Scalp Massage", 
+				"image": "images/thumbs/10.jpg", 
+				"description": "Scalp massage helps relieve tension and increase circulation. Great for anyone suffering from headaches or migraines. $10"},
+			{
+				"subitem": "Oil Infused Aromatherapy", 
+				"image": "images/thumbs/11.jpg", 
+				"description": "doTERRA essential oils are infused with massage oil to add extra benefit to any massage or facial service. $10"},
+			{
+				"subitem": "Eye Treatment", 
+				"image": "images/thumbs/09.jpg", 
+				"description": "Revitalize your eyes! Our eye treatment incorporates an exfoliation, masque, and hydrating gel to bring life back to tired eyes. $25"},
+			{
+				"subitem": "Lip Treatment",
+				"image": "images/thumbs/07.jpg", 
+				"description": "Transform your lip area with an exfoliation, masque, and hydrating lip balm. $15"},
+			{
+				"subitem": "Lip/Eye Combo", 
+				"image": "images/thumbs/05.jpg", 
+				"description": "Our Lip and Eye Treatment combo rejuvenates dull and dry skin, revealing a brighter appearance. $35"},
+			{
+				"subitem": "Hand Sugar Scrub", 
+				"image": "images/thumbs/03.jpg", 
+				"description": "Revive dry hands with a Sugar Hand Scrub! Relax as your hands are exfoliated with an apple & pear sugar scrub. The service is finished with a hydrating lotion. $15"},
+			{
+				"subitem": "Foot Sugar Scrub", 
+				"image": "images/thumbs/01.jpg", 
+				"description": "You are on your feet all day, treat them with our Sugar Foot Scrub. Your therapist will use an invigorating sugar scrub to exfoliate your feet, and then apply a hydrating lotion. $15"}
+			]
+	},	{
+		"wheel": "Waxing",
+		"description": "b.jones Organic Spa uses Rica Wax for all waxing services. Rica Wax is a natural Wax from Italy that is Colophony Free, and contains no petroleum oils.",
+		"menu" : [
+			{
+				"subitem": "Eyebrow Wax", 
+				"image": "images/thumbs/09.jpg", 
+				"description": "$15"},
+			{
+				"subitem": "Lip & Chin Wax", 
+				"image": "images/thumbs/12.jpg", 
+				"description": "$15"},
+			{
+				"subitem": "Underarm or Half Arm", 
+				"image": "images/thumbs/03.jpg", 
+				"description": "$25"},
+			{
+				"subitem": "Full Arm", 
+				"image": "images/thumbs/07.jpg", 
+				"description": "$30"},
+			{
+				"subitem": "Half Leg", 
+				"image": "images/thumbs/09.jpg", 
+				"description": "$35"},
+			{
+				"subitem": "Full Leg", 
+				"image": "images/thumbs/05.jpg", 
+				"description": "$65"},
+			{
+				"subitem": "Chest", 
+				"image": "images/thumbs/04.jpg", 
+				"description": "$45"},
+			{
+				"subitem": "Back", 
+				"image": "images/thumbs/02.jpg", 
+				"description": "$45"},
+			{
+				"subitem": "Bikini", 
+				"image": "images/thumbs/11.jpg", 
+				"description": "$25"},
+			{
+				"subitem": "Extended Bikini", 
+				"image": "images/thumbs/03.jpg", 
+				"description": "$35"},
+			{
+				"subitem": "Brazilian", 
+				"image": "images/thumbs/08.jpg", 
+				"description": "$65"}
+			]
+	},	{
+		"wheel": "Tinting",
+		"description": "Make your eyes pop with our tinting service. b.jones tints eyebrows, lashes or both with a vegetable dye to enhance your features.",
+		"menu" : [
+			{
+				"subitem": "Eyebrow Tint", 
+				"image": "images/thumbs/06.jpg", 
+				"description": "$15"},
+			{
+				"subitem": "Eyelash Tint", 
+				"image": "images/thumbs/07.jpg", 
+				"description": "$20"},
+			{
+				"subitem": "Brow/Lash Combo", 
+				"image": "images/thumbs/05.jpg", 
+				"description": "$25"}
+			]
+	},	{
+		"wheel": "Express",
+		"description": "b.jones offers a number of express treatments to fit your busy schedule",
+		"menu" : [ 
+			{
+				"subitem": "Reflexology", 
+				"image": "images/thumbs/05.jpg", 
+				"description": "Reflexology is a therapeutic method of relieving pain by stimulating predefined pressure points on the hands and feet. It can be effective for promoting good health and reducing symptoms of stress, injury, and illness.  15 Minute $25"},
+			{
+				"subitem": "Reiki", 
+				"image": "images/thumbs/10.jpg", 
+				"description": "Reiki is an ancient Japanese method of healing which uses energy to balance the body and mind. Reiki can help the body release stress and tension, improve sleep, relieve pain, reduce blood pressure, and increase energy level. This is a wonderful compliment to medical treatment.  15 Minute $25"},
+			{
+				"subitem": "Reflex/Reiki Combo", 
+				"image": "images/thumbs/08.jpg", 
+				"description": "Recharge your batteries with our express combo. This service combines the relaxation and healing of Reiki & Reflexology. 20 Minute $30"},
+			{
+				"subitem": "Chakra Balance", 
+				"image": "images/thumbs/02.jpg", 
+				"description": "Using essential oils and healing energy your therapist will restore balance and clear blocked chakras. $15"},
+			{
+				"subitem": "Chair Massage", 
+				"image": "images/thumbs/11.jpg", 
+				"description": "Chair massage is a wonderful way to relieve tension when you’re on the go. Want to try a new massage therapist? This can be a great way to sample a therapist’s technique.  10 Minute $15 | 20 Minute $25"},
+			{
+				"subitem": "b. Focus Facial Treatment", 
+				"image": "images/thumbs/01.jpg", 
+				"description": "This spot treatment will help treat a breakout, extractions, exfoliation or hydration. Ideal for in between regular facial services. $30"}
+			]
+	}
+]

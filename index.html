@@ -1,0 +1,280 @@
+<!DOCTYPE HTML>
+
+<html ng-app="bjonesApp">
+	<head>
+		<title>b.jones organic spa</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="description" content="b.jones Organic Spa, morristown, nj">
+		<meta name="keywords" content="b.jones,b,jones,organic,spa,morristown,nj,massage,energy,healing,facial,body treatment,oncology,myofascial,prenatal,microdermabrasion,peels,exfoliation,reiki,wellness,waxing,tinting,holistic,reflexology,lymphatic,drainage,chair,scrub,eminence,rica,wax,coroporate,events,parties,party,rental,express,menu,deep,tissue,medical,sports">
+		<meta name="author" content="jose delavalle">
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		
+		
+		<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.0.0/angular-material.min.css">
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+	</head>
+	<body ng-controller="bjonesController as ctrl" ng-cloak>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+
+						<div class="inner">
+
+							<!-- Header -->
+							 <md-datepicker ng-model="myDate" md-placeholder="Enter date"
+            md-min-date="minDate" md-max-date="maxDate"></md-datepicker>
+							<header id="header">
+								<a href="index.html" class="logo"><img src="images/bjones.png"><h3>organic spa</h3></a>
+								<div ng-include="'partials/socialmedia.html'"></div>
+							</header>
+							<!-- Banner -->
+								<section id="banner">
+									<div class="content">
+										<header>
+											<h2>Relaxation &bull; Sustainability &bull; Wellness</h2>
+											<a ng-click="seeMap=!seeMap">
+												<p>{{streetAddress}}<i ng-class="seeMap ? 'fa fa-minus' : 'fa fa-plus'"></i></p></a>
+											<span ng-if="seeMap" class="image fit map">
+												<a href="https://www.google.com/maps/place/62+South+St,+Morristown,+NJ+07960" target="_blank">
+													<img ng-src="{{mapSrc}}" />
+												</a>
+											</span>
+										</header><hr>
+										<p>Relax your mind, body and spirit at b.jones Organic Spa in Morristown, NJ. b.jones is a full service organic spa offering massage, facial, body treatments, energy work, and waxing. Our staff is committed to providing exceptional services tailored to our client's needs using Eminence Organics products & Rica Wax.  Our mission is to give back to the community, one face at a time.</p>
+										<ul class="actions">
+											<li><a href="#sidebar" class="open-menu button big">More Info</a></li>
+										</ul>
+									</div>
+									<span class="image object">
+										<img src="images/01.jpg" alt="" />
+									</span>
+								</section>
+
+							
+
+							<!-- Section -->
+								<section>
+									
+									<div ng-include="'partials/tabs.html'"></div>
+									
+								</section>
+
+								<!-- Section -->
+								<section>
+									<header class="major">
+										<h2>Menu</h2>
+									</header>
+									<div class="features">
+										<article ng-repeat="item in menuItems">
+											<span class="icon fa-diamond"></span>
+											<div class="content">
+												<h3>{{item.wheel}}</h3>
+												<p>{{item.description}}</p>
+											</div>
+										</article>
+										
+									</div>
+								</section>
+
+								<section>
+
+									<header class="major">
+										<h2>Get in touch</h2>
+									</header>
+									<div class="row">
+										<div class="4u 12u$(small)">
+											
+											<ul class="contact">
+												<!-- <li class="fa-envelope-o"><a href="#">info@bjones-spa.com</a></li> -->
+												<li class="fa-phone">(973) 538-1600</li>
+												<li class="fa-home">62B South St.<br />
+												Morristown, NJ 07960</li>
+											</ul>
+											<hr>
+											<div ng-include="'partials/socialmedia.html'"></div>
+										</div>
+										<div class="8u$ 12u$(small)">
+											<div ng-include="'partials/form.html'"></div>
+										</div>
+									</div>
+								</section>
+
+							<!-- Footer -->
+								<footer id="footer">
+									<p class="copyright">&copy; b.jones organic spa. 2016 - All rights reserved.</p>
+								</footer>
+						</div>
+
+					</div>
+
+				<!-- Sidebar -->
+					<div id="sidebar">
+						<div class="inner">
+
+							<!-- Search -->
+								<!-- <section id="search" class="alt">
+									<form method="post" action="#">
+										<input type="text" name="query" id="query" placeholder="Search" />
+									</form>
+								</section>-->
+							
+							<!-- Menu -->
+								<nav id="menu">
+									<header class="major">
+										<a href="#" class="image fit"><img src="images/logo.png"></a>
+									</header>
+									<ul>
+										<li>
+											<span class="opener">About</span>
+											<ul>
+												<li>
+													At b.jones Organic Spa, we believe you should shine from the inside out.
+												</li>
+											</ul>
+										<!-- <li><a href="#">Photo Gallery</a></li> -->
+										<li><a href="bjonesmenu.pdf" target="_blank">Menu</a></li>
+										<li>
+											<span class="opener">Hours Of Operation</span>
+											<ul>
+												<li>Sunday: 9am - 5pm</li>
+												<li>Monday: 10am - 5pm</li>
+												<li>Tuesday: 10am - 5pm</li>
+												<li>Wednesday: 10am - 5pm</li>
+												<li>Thursday: 10am - 5pm</li>
+												<li>Friday: 10am - 5pm</li>
+												<li>Saturday: 9am - 5pm</li>
+											</ul>
+										</li>
+										<li><a href="#">Contact</a></li>
+										<li>
+											<span class="opener">Meet the owner</span>
+											<ul>
+												<li>
+													Irene is a graduate of Artistic Academy and The Institute for Therapeutic Massage and is the owner of b.jones.  It is her philosophy that organic products, organic cleaning methods, and offering organic teas/snacks is a client right.  Irene believes in treating skin conditions as they appear and enjoys giving body spa treatments and relaxing facials.  A Morristown resident since 1999, Irene is a  member of Assumption Church and parent volunteer for Assumption School, and has volunteered with several other local organizations. She currently serves on the board for Morristown Women in Business and is an assistant pod leader for the Morristown Pod for Believe Inspire Grow.   Irene's mission is to give back to the community one face at a time.
+												</li>
+											</ul>
+										</li>
+										<li>
+											<span class="opener">Packages</span>
+											<ul>
+												<li>
+													<h4>Packages</h4>
+													Prices do not include tax or gratuity.
+												</li><hr><li>
+													<h4>Detoxification Series</h4>
+													3 Lymphatic Massage Services $310
+													3 Detoxifying Body Treatments $405
+												</li><hr><li>
+													<h4>Exfoliation Series</h4>
+													3 Full Body Sugar Scrubs $270
+												</li><hr><li>
+													<h4>Mommy to b.Series</h4>
+													4 Prenatal Massage + Shantala baby Massage Class $400
+												</li><hr><li>
+													<h4>Purchase a package of 5 prepaid services, and receive a complimentary 6th service.</h4>
+												</li><hr><li>
+													<h4>Relaxation Massage Packages:</h4>
+													30 Minute $325 | 60 Minute $525
+													90 Minute $725 | 120 Minute $925
+												</li><hr><li>
+													<h4>Therapeutic Massage Packages:</h4>
+													30 Minute $425 | 60 Minute $625
+													90 Minute $825 | 120 Minute $975
+												</li><hr><li>
+													<h4>Facial Packages:</h4>
+													Express Facial $325
+													Signature Facial $625
+													Arctic Berry Peel $425
+													Microdermabrasion $625v MicroPeel $875
+													b.facial $975
+												</li>
+											</ul>
+										</li>
+										<li>
+											<span class="opener">Spa Policies &amp; Etiquette</span>
+											<ul>
+												<li>
+													<h4>Sanitation:</h4>
+													b.Jones uses organic cleaning supplies that are better for you & the environment.
+												</li><hr><li>
+													<h4>Appointments:</h4>
+													Please arrive 15 minutes to your appointment time. If you are late for a service, you may be cut short. A major credit card is required to reserve your appointment. For your convenience, we accept Visa, Mastercard, American Express, & Discover.
+												</li><hr><li>
+													<h4>Cancellations:</h4>
+													24 hour notice is required to cancel your appointment. If you cancel your appointment in less than 24 hours, your credit card will be charged 50% of your service.
+												</li><hr><li>
+													<h4>Satisfaction Guarantee:</h4>
+													All retail returns will be refunded within 7 days of purchase. If you are unhappy with a service, please let us know immediately.
+												</li><hr><li>
+													<h4>Children:</h4>
+													Children are not permitted in the spa unless they are here for an event, service, or invited to the spa.
+												</li><hr><li>
+													<h4>Gratuities:</h4>
+													Gratuity may be given directly to your therapist or added to the bill.
+												</li>
+											</ul>
+										</li>
+										<li>
+											<span class="opener">Products</span>
+											<ul>
+												<li><a href="https://eminenceorganics.com/us">Eminence Organics</a></li>
+												<li><a href="http://www.ricawax.com/">Rica Wax</a></li>
+											</ul>
+										</li>
+										
+									</ul>
+
+								</nav>
+
+							<!-- Section -->
+								<section>
+									<header class="major">
+										<h2>Events</h2>
+									</header>
+									<div class="mini-posts">
+										<article ng-repeat="event in facebookEvents">
+											<h3>{{event.start_time.substring(0, 10)}}</h3>
+											<a href="http://facebook.com/events/{{event.id}}" target="_blank" class="image"><img ng-src="{{event.cover.source}}" alt="" /></a>
+											<h3>{{event.name}}</h3>
+											
+											
+										</article>
+										
+									</div>
+									<ul class="actions">
+										<li><a href="#" class="button">More</a></li>
+									</ul>
+								</section>
+
+							
+
+						</div>
+					</div>
+					
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+
+			<script src="/node_modules/angular/angular.min.js"></script>
+			<script src="node_modules/angular-route/angular-route.min.js"></script>
+			<script src="node_modules/angular-aria/angular-aria.min.js"></script>
+			<script src="/node_modules/angular-animate/angular-animate.min.js"></script>
+
+			<script src="/node_modules/angular-material/angular-material.min.js"></script>
+			<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/t-114/svg-assets-cache.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+			<script src="assets/js/app.js"></script>
+
+
+	</body>
+</html>
