@@ -1,6 +1,6 @@
 md-input-container:not(.md-input-invalid).md-input-focused .md-input {
 
-		border-color: #4676AA;
+		border-color: _palette(accent);
 }
 .md-calendar {
 	width: auto !important;
@@ -8,9 +8,4 @@ md-input-container:not(.md-input-invalid).md-input-focused .md-input {
 
 	md-datepicker {
 		padding-bottom: 10px;
-	}
-
-	.md-datepicker-input-container {
-		visibility: hidden;
-		max-width: 0px;
 	}

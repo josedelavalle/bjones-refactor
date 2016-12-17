@@ -2,7 +2,7 @@
 
   <md-toolbar>
     <div class="md-toolbar-tools">
-      <h2>{{title}}</h2>
+      <h2>{{title}} &bull; {{subtitle}}</h2>
       <span flex></span>
       <md-button class="md-icon-button" ng-click="ctrl.cancel()">
         <md-icon md-svg-src="img/icons/ic_close_24px.svg" aria-label="Close dialog"></md-icon>
@@ -13,7 +13,9 @@
   <md-dialog-content ng-cloak>
     <div class="md-dialog-content">
       <form id="userForm" ng-submit="$event.preventDefault()">
-        
+        <!-- <md-datepicker ng-model="myDate" md-label="Pick Date"
+            md-min-date="minDate" md-max-date="maxDate">
+        </md-datepicker> -->
         <md-input-container class="md-block" flex-gt-sm required>
             <label>Name</label>
             <input ng-model="user.firstName">
@@ -24,11 +26,12 @@
             <input ng-model="user.email">
            
         </md-input-container>
-        
+
+        <a href="#" ng-click="" class="button">Book Appointment</a>
       </form>
     </div>
+
   </md-dialog-content>
 
-  <md-datepicker ng-model="myDate" md-placeholder="Enter date"
-            md-min-date="minDate" md-max-date="maxDate"></md-datepicker>
+  
 </md-dialog>

@@ -1987,6 +1987,12 @@ input[type="radio"] + label:before {
   .image.map {
     margin: 0 !important;
     width: 100% !important; }
+  .image.saturated {
+    -webkit-filter: saturate(180%);
+    filter: saturate(180%); }
+  .image.grayscaled {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%); }
 
 a.image {
   overflow: hidden; }
@@ -2490,7 +2496,7 @@ md-tabs.md-default-theme md-ink-bar, md-tabs md-ink-bar {
   background-color: #82CA92 !important; }
 
 md-input-container:not(.md-input-invalid).md-input-focused .md-input {
-  border-color: #4676AA; }
+  border-color: #82CA92; }
 
 .md-calendar {
   width: auto !important; }
@@ -2498,12 +2504,11 @@ md-input-container:not(.md-input-invalid).md-input-focused .md-input {
 md-datepicker {
   padding-bottom: 10px; }
 
-.md-datepicker-input-container {
-  visibility: hidden;
-  max-width: 0px; }
-
 .md-dialog {
-  width: 100%; }
+  width: 50%; }
+
+.md-toolbar-tools {
+  background-color: #82CA92 !important; }
 
 /* Wrapper */
 #wrapper {
