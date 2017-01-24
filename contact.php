@@ -3,35 +3,30 @@ if($_POST)
 {
     $to_email       = "me@josedelavalle.com"; //Recipient email, Replace with own email here
     
-    //check if its an ajax request, exit if not
-    if(!isset($_SERVER['HTTP_X_REQUESTED_WITH']) AND strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) != 'xmlhttprequest') {
+    // //check if its an ajax request, exit if not
+    // if(!isset($_SERVER['HTTP_X_REQUESTED_WITH']) AND strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) != 'xmlhttprequest') {
         
-        $output = json_encode(array( //create JSON data
-            'type'=>'error', 
-            'text' => 'Sorry Request must be Ajax POST'
-        ));
-        die($output); //exit script outputting json data
-    } 
+    //     $output = json_encode(array( //create JSON data
+    //         'type'=>'error', 
+    //         'text' => 'Sorry Request must be Ajax POST'
+    //     ));
+    //     die($output); //exit script outputting json data
+    // } 
     
     //Sanitize input data using PHP filter_var().
-    $user_name      = filter_var($_POST["user_name"], FILTER_SANITIZE_STRING);
-    $user_email     = filter_var($_POST["user_email"], FILTER_SANITIZE_EMAIL);
+    $postdata = file_get_contents("php://input");
+    $request = json_decode($postdata);
+    $user_name = $request->name;
+    $user_email = $request->email;
+    $message = $request->msg;
+   
+
+    //$user_name      = $_POST["name"];
+    //$user_email     = $_POST["email"];
     $subject        = "Website Contact Form";
-    $message        = filter_var($_POST["msg"], FILTER_SANITIZE_STRING);
+    //$message        = $_POST["msg"];
     
-    //additional php validation
-    if(strlen($user_name)<4){ // If length is less than 4 it will output JSON error.
-        $output = json_encode(array('type'=>'error', 'text' => 'Name is too short or empty!'));
-        die($output);
-    }
-    if(!filter_var($user_email, FILTER_VALIDATE_EMAIL)){ //email validation
-        $output = json_encode(array('type'=>'error', 'text' => 'Please enter a valid email!'));
-        die($output);
-    }
-    if(strlen($message)<3){ //check empty message
-        $output = json_encode(array('type'=>'error', 'text' => 'Too short message! Please enter something.'));
-        die($output);
-    }
+    
     
     //email body
     $message_body = $message."\r\n\r\n-".$user_name."\r\nEmail : ".$user_email;

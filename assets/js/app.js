@@ -4,7 +4,7 @@ app.controller('DialogCtrl', function($scope) {
 
 });
 
-app.controller('bjonesController', function($scope, $mdDialog, getWheelItems, getFacebookEvents) {
+app.controller('bjonesController', function($scope, $mdDialog, getWheelItems, getFacebookEvents, sendemail) {
 	$scope.title = "b.jones";
 	$scope.subtitle = "organic spa";
 	$scope.streetAddress = "62 B South St. Morristown, NJ ";
@@ -19,6 +19,19 @@ app.controller('bjonesController', function($scope, $mdDialog, getWheelItems, ge
 		$scope.menuItems = msg.data;
 		console.log($scope.menuItems);
 	});
+
+  $scope.sendEmail = function() {
+    console.log('sendEmail clicked');
+
+
+    // sendemail.post(thisname, thisemail, thismessage, thissubject).then(function (msg) {
+    //   console.log('send email', msg);
+    // }).catch( function (err) {
+    //   console.log('error sending email', err);
+    // });
+
+
+  };
 	
 
 	
@@ -30,21 +43,53 @@ app.controller('bjonesController', function($scope, $mdDialog, getWheelItems, ge
 
 	var self = this;
 
-    self.openDialog = function($event) {
+    self.openDialog = function($event, item) {
       $mdDialog.show({
         controller: DialogCtrl,
         controllerAs: 'ctrl',
         templateUrl: 'partials/dialog.html',
+        locals: {
+            item : item
+        },
         parent: angular.element(document.body),
         targetEvent: $event,
         clickOutsideToClose:true
-      })
-    }
+      });
+    };
 
 	$scope.changeCategory = function() {
 		$scope.selectedIndex = this.$index;
 	};
 
+});
+
+app.factory('sendemail', function($http) {
+    return {
+      post: function(thisname, thisemail, thismessage) {
+        var method = 'POST';
+        var url = 'http://temp.josedelavalle.com/contact.php';
+        var FormData = {
+            'name' : thisname,
+            'email' : thisemail,
+            'msg': thismessage
+          };
+          $http({
+            method: method,
+            url: url,
+            data: FormData,
+            headers: {'Content-Type': 'application/x-www-form-urlencoded'}
+            //cache: $templateCache
+          }).
+          then(function(response) {
+            console.log(response.data);
+            return response;
+          }).
+          catch(function(response) {
+              console.log('error sending mail', response);
+          });
+          return false;
+        }
+    };
 });
 
 app.factory('getFacebookEvents', function ($http) {
@@ -68,11 +113,23 @@ app.factory('getWheelItems', function ($http) {
     };
 });
 
-function DialogCtrl ($timeout, $q, $scope, $mdDialog) {
-    
+function DialogCtrl ($timeout, $q, $scope, $mdDialog, sendemail, item) {
+    $scope.thismessage = item;
     $scope.title="b.jones";
     $scope.subtitle = "organic spa";
+    
+    $scope.errormessage = "error";
+    $scope.sendEmail = function(thisname, thisemail, thismessage) {
+      console.log('sendEmail clicked');
 
+
+      var msg = sendemail.post(thisname, thisemail, thismessage);
+      $scope.errormessage = msg.text;
+
+
+      console.log('msg', msg);
+      //$mdDialog.cancel();
+    };
     var self = this;
     self.cancel = function($event) {
       $mdDialog.cancel();

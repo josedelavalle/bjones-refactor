@@ -12,7 +12,7 @@
 
   <md-dialog-content ng-cloak>
     <div class="md-dialog-content">
-      <form id="userForm" ng-submit="$event.preventDefault()">
+     
         <!-- <md-datepicker ng-model="myDate" md-label="Pick Date"
             md-min-date="minDate" md-max-date="maxDate">
         </md-datepicker> -->
@@ -27,8 +27,8 @@
            
         </md-input-container>
 
-        <a href="#" ng-click="" class="button">Book Appointment</a>
-      </form>
+      <div ng-click="sendEmail(user.firstName, user.email, thismessage)" class="button">Book Appointment</div>
+
     </div>
 
   </md-dialog-content>
